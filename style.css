@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* common thing */
+.common-text{
+    color: #8987A1;
+    font-family: 400;
+}
+/* header section style */
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 100px;
+}
+.navigation img{
+    width: 80px;
+    height: 60px;
+}
+.navigation ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.navigation a{
+    text-decoration: none;
+    color: black;   
+}
+.fa-classic{
+    margin-right: 5px;
+}
+/* responsive for mobile device */
+
+/* responsive navigation section */
+@media (max-width: 640px) {
+    .display{
+        display: none;
+    }
+    .navigation{
+        margin: 30px 50px;
+    }
+    .fa-classic{
+        display: inline;
+    }
+}
