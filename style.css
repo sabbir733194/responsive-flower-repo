@@ -8,6 +8,9 @@
     color: #8987A1;
     font-family: 400;
 }
+.plant-text span{
+    color: #E95A08;
+}
 /* header section style */
 .navigation{
     display: flex;
@@ -31,6 +34,40 @@
 .fa-classic{
     margin-right: 5px;
 }
+/* header image section */
+.header img{
+    width: 100%;
+    height: 545px;
+}
+/* body our plants section style */
+.our-plant{
+    margin: 40px 100px;
+}
+.plant-text{
+    text-align: center;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+.card{
+    text-align: center;  
+    /* border: 2px solid black; */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;   
+}
+.card img{
+    width: 100%;
+}
+.btn{
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    background-color: #E95A08;
+    color: white;
+}
 /* responsive for mobile device */
 
 /* responsive navigation section */
@@ -44,4 +81,13 @@
     .fa-classic{
         display: inline;
     }
+    /* card section responsive */
+    .card-container{   
+    grid-template-columns: repeat(2, 1fr);
+    margin: 15px 20px;  
+    }
+    .our-plant{
+    margin: 40px 0px;
+
+}
 }
